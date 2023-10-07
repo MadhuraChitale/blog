@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Sample Blog 1",
+    "image": "/images/iggy.jpg",
+    "description": "This is iggy 1",
+    "content": ""
+  },
+  {
+    "id": 2,
+    "title": "Sample Blog 2",
+    "image": "/images/iggy2.jpg",
+    "description": "This is iggy 2",
+    "content": ""
+  },
+  {
+    "id": 1,
+    "title": "Sample Blog 3",
+    "image": "/images/iggy3.jpg",
+    "description": "This is iggy 3",
+    "content": ""
+  }
+]
