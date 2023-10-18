@@ -25,52 +25,46 @@ const customTheme = createTheme({
 
 export default function Navbar() {
   return (
-    <ThemeProvider theme={customTheme}>
-      <AppBar position="static" color="primary">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Blog wesite name
-          </Typography>
-          <Tabs
-            value={false} // Set value to false to prevent the tab selection effect
-            aria-label="Navigation tabs"
-          >
-            <Tab
-              label="Home"
-              component={Link}
-              href="/landing"
-              style={{ color: "white" }}
-            />
-            <Tab
-              label="Upload"
-              component={Link}
-              href="/upload"
-              style={{ color: "white" }}
-            />
-          </Tabs>
-        </Toolbar>
-      </AppBar>
-    </ThemeProvider>
-    //   <div className="navbar bg-base-100">
-    //   <div className="flex-1">
-    //     <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-    //   </div>
-    //   <div className="flex-none">
-    //     <ul className="menu menu-horizontal px-1">
-    //       <li><a>Link</a></li>
-    //       <li>
-    //         <details>
-    //           <summary>
-    //             Parent
-    //           </summary>
-    //           <ul className="p-2 bg-base-100">
-    //             <li><a>Link 1</a></li>
-    //             <li><a>Link 2</a></li>
-    //           </ul>
-    //         </details>
-    //       </li>
-    //     </ul>
-    //   </div>
-    // </div>
+    // <ThemeProvider theme={customTheme}>
+    //   <AppBar position="static" color="primary">
+    //     <Toolbar>
+    //       <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+    //         Blog wesite name
+    //       </Typography>
+    //       <Tabs
+    //         value={false} // Set value to false to prevent the tab selection effect
+    //         aria-label="Navigation tabs"
+    //       >
+    //         <Tab
+    //           label="Home"
+    //           component={Link}
+    //           href="/landing"
+    //           style={{ color: "white" }}
+    //         />
+    //         <Tab
+    //           label="Upload"
+    //           component={Link}
+    //           href="/upload"
+    //           style={{ color: "white" }}
+    //         />
+    //       </Tabs>
+    //     </Toolbar>
+    //   </AppBar>
+    // </ThemeProvider>
+    <div className="navbar bg-base-100">
+      <div className="flex-1">
+        <a className="btn btn-ghost normal-case text-xl">Blog Site</a>
+      </div>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a href="/landing">Home</a>
+          </li>
+          <li>
+            <a href="/upload">Upload</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
