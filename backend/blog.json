@@ -1,23 +1,37 @@
 [
   {
-    "id": 1,
-    "title": "Sample Blog 1",
-    "image": "/images/iggy.jpg",
-    "description": "This is iggy 1",
-    "content": ""
+    "id": "6b5e669f-d699-4b3b-9047-bbde15adbd51",
+    "title": "Coffee that all should try",
+    "content": "Even though there are several coffee types in today's modern world, the history of coffee cultivation dates back many millennia to the old coffee forests on the Ethiopian plateau. According to folklore, a goat herder Kaldi initially discovered the treasured beans.\r\n\r\nAs word spread more quickly to the east, coffee made its way to the Arabian Peninsula and started a voyage that would eventually take these beans around the world. Later, trade and coffee farming started in the Arabian Peninsula as well.\r\n\r\nWhen people began to love coffee's flavour, it was consumed at home and in the numerous public coffee shops that sprang up as the number of coffee houses increased. Knowledge of this \"wine of Araby\" grew as a result of the tens of thousands of pilgrims from all over the world who visit the holy city of Mecca each year. \r\n\r\nTravellers from Europe to the near east returned with tales of a unique dark, black liquor. That is how coffee arrived in Europe in the 17th century and spread to other parts of the continent. This was the breakthrough in the origination of coffee, while the Europeans invented several types of coffee flavours, adding the English touch from their native region and resulting in a wide range of coffees. ",
+    "imageUrl": "https://storage.cloud.google.com/blog-posts-images/6b5e669f-d699-4b3b-9047-bbde15adbd51",
+    "keywords": "#lovecoffee, #coffeeIsLife"
   },
   {
-    "id": 2,
-    "title": "Sample Blog 2",
-    "image": "/images/iggy2.jpg",
-    "description": "This is iggy 2",
-    "content": ""
+    "id": "f8530bf3-b6e8-4e75-a894-36e909cd777f",
+    "title": "Annyeong Seoul!",
+    "content": "The history of the city of Seoul dates back approximately 2,000 years, to when Wiryeseong, the capital of Baekje, was located on the banks of the Hangang River in the southeastern part of what is now Seoul. Development of the city began in earnest once it was appointed the capital of the Joseon Dynasty (1392 - 1910) in 1394.\r\n \r\nThe framework for modern-day Seoul began to emerge as the construction of electrical facilities, railroads, streetcar tracks, parks, waterworks systems, schools, and hospitals commenced at the end of the 19th century with the opening of the port. However, Seoul soon came under the influence of Japanese colonialism (1910 - 1945). This was followed by gradual industrialization, which in turn led to the formation of illegal settlement areas around the city. With these peripheral regions quickly being considered as within the scope of the city, Seoul began to transform into a new residential zone. After Korea achieved independence in 1945, the city was officially renamed Seoul Metropolitan City. However, as the Korean War broke out, the city fell into ruin.\r\n \r\nIn the 1950s, Seoul rapidly grew out of the ashes of the war and, supported by rapid economic growth, it advanced to become a global megalopolis in just half a century. While it took a century for many European countries to industrialize, Korea accomplished the same in less than 30 years. In only 50 years, Seoul overcame various urban problems to grow and advance into a smart city where 10 million people live comfortably.\r\n ",
+    "imageUrl": "https://storage.cloud.google.com/blog-posts-images/f8530bf3-b6e8-4e75-a894-36e909cd777f",
+    "keywords": "#loveSoeul, #KoreaTourism"
   },
   {
-    "id": 1,
-    "title": "Sample Blog 3",
-    "image": "/images/iggy3.jpg",
-    "description": "This is iggy 3",
-    "content": ""
+    "id": "65554ff2-394b-4449-80fb-148eea885b9c",
+    "title": "Study tips",
+    "content": "We know that in today's education climate this may be a difficult task to actually accomplish. However, that being said having something you can tangibly hold on to, highlight and flip through is always better than looking at a computer screen. \r\n\r\nThis also doesn't mean just books - type out your notes and print them or print your lecture slides and write on them. Studies suggest that when studying scrolling and clicking becomes more of a pattern and less about knowledge retention, so if you print and read you’ll remember more!\r\n",
+    "imageUrl": "https://storage.cloud.google.com/blog-posts-images/65554ff2-394b-4449-80fb-148eea885b9c",
+    "keywords": "# hardWork"
+  },
+  {
+    "id": "69b5dbeb-4849-4f90-89a8-6e7d1b626c0d",
+    "title": "Superfoods to boost a healthy diet.",
+    "content": "No single food — not even a superfood — can offer all the nutrition, health benefits, and energy we need to nourish ourselves. The 2015–2020 US Dietary Guidelines recommend healthy eating patterns, \"combining healthy choices from across all food groups — while paying attention to calorie limits.\"\r\n\r\nOver the years, research has shown that healthy dietary patterns can reduce risk of high blood pressure, heart disease, diabetes, and certain cancers. Dietary patterns such as the DASH (Dietary Approaches to Stop Hypertension) diet and the Mediterranean diet, which are mostly plant-based, have demonstrated significant health benefits and reduction of chronic disease.\r\n\r\nHowever, there are a few foods that can be singled out for special recognition. These \"superfoods\" offer some very important nutrients that can power-pack your meals and snacks, and further enhance a healthy eating pattern.\r\n  \r\nFish can be a good source of protein and omega-3 fatty acids, which help prevent heart disease.\r\n\r\nHow to include it: Buy fresh, frozen, or canned fish. Fish with the highest omega-3 content are salmon, tuna steaks, mackerel, herring, trout, anchovies, and sardines.\r\n\r\nLeafy greens. Dark, leafy greens are a good source of vitamin A, vitamin C, and calcium, as well as several phytochemicals (chemicals made by plants that have a positive effect on your health). They also add fiber into the diet.\r\n\r\nHow to include them: Try varieties such as spinach, swiss chard, kale, collard greens, or mustard greens. Throw them into salads or sauté them in a little olive oil. You can also add greens to soups and stews.\r\n\r\nNuts. Hazelnuts, walnuts, almonds, pecans — nuts are a good source of plant protein. They also contain monounsaturated fats, which may be a factor in reducing the risk of heart disease.\r\n\r\n",
+    "imageUrl": "https://storage.cloud.google.com/blog-posts-images/69b5dbeb-4849-4f90-89a8-6e7d1b626c0d",
+    "keywords": "#stayFit, #stayHealthy"
+  },
+  {
+    "id": "84f8a1e8-01e0-4e02-b0ba-e268f486ad69",
+    "title": "Generative AI",
+    "content": "Image generation. Generative AI models can be used to create new images with natural language prompts, which is one of the most popular techniques with current tools and applications. The goal with text-to-image generation is to create an image that accurately represents the content of a given prompt. For example, when we give the text prompt, “impressionist style oil painting of a Shiba Inu dog giving a tarot card reading,” to the popular AI image generator DALL-E 2 we get something that looks like this (and yes, it’s a gem):",
+    "imageUrl": "https://storage.cloud.google.com/blog-posts-images/84f8a1e8-01e0-4e02-b0ba-e268f486ad69",
+    "keywords": "#AI"
   }
 ]
