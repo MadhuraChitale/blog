@@ -1,7 +1,6 @@
 // translationService.js
 import axios from "axios";
 
-// const API_KEY = "AIzaSyBB1Z6uHBynISBxVIEO91L41XyBU8Snk_c"; //remove
 
 const API_KEY = process.env.REACT_APP_TRANSLATE_KEY;
 
