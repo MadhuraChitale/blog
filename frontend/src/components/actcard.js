@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-export default function ActionAreaCard({ image, title, description, id }) {
+export default function ActionAreaCard({ imageUrl, title, keywords, id }) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -20,8 +20,8 @@ export default function ActionAreaCard({ image, title, description, id }) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="250"
-          image={image}
+          sx={{ height: 250, width: 350 }}
+          image={imageUrl}
           alt={title} // You can use the title as alt text
         />
         <CardContent>
@@ -29,7 +29,7 @@ export default function ActionAreaCard({ image, title, description, id }) {
             {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {description}
+            {keywords}
           </Typography>
         </CardContent>
       </CardActionArea>

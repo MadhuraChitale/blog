@@ -7,13 +7,13 @@ import { useHistory } from "react-router-dom";
 function DisplayBlog() {
   const [cardsData, setCardsData] = useState([]);
 
-  useEffect(() => {
-    // Fetch the data from the local JSON file or your backend API
-    fetch("http://localhost:5000/api/blogs")
-      .then((response) => response.json())
-      .then((data) => setCardsData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  // useEffect(() => {
+  //   // Fetch the data from the local JSON file or your backend API
+  //   fetch("http://localhost:5000/api/blogs")
+  //     .then((response) => response.json())
+  //     .then((data) => setCardsData(data))
+  //     .catch((error) => console.error("Error fetching data:", error));
+  // }, []);
 
   return (
     <div>

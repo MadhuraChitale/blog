@@ -2,24 +2,48 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import jwtDecode from "jwt-decode";
 import { Button } from "@mui/material";
+import { useHistory, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/authprovider";
+import axios from "axios";
+import "./login.css";
 
 function Login() {
-  const [user, setUser] = useState({});
+  const navigate = useNavigate();
+  // const [user, setUser] = useState({});
+  const { authState, authDispatch } = useAuth();
 
   let handleCallbackResponse = (response) => {
     console.log(response);
     let userObject = jwtDecode(response.credential);
-    setUser(userObject);
+    // setUser(userObject);
+    authDispatch({ type: "LOGIN", payload: userObject }); // Dispatch login action
     document.getElementById("signIn").hidden = true;
 
     // send data to backend and store in user sessions
+    // Prepare the data to be sent to the backend
+    const data = { userObject };
+
+    axios
+      .post("http://localhost:5000/api/userdata", data)
+      .then((response) => {
+        // Handle the response from the backend if needed
+      })
+      .catch((error) => {
+        console.error("Error sending data to the backend:", error);
+      });
+
+    // Store user data in session storage
+    sessionStorage.setItem("user", JSON.stringify(userObject));
+
+    navigate(`/landing`);
   };
 
   useEffect(() => {
+    const clientid = process.env.REACT_APP_CLIENT_ID;
+    console.log(clientid);
     if (window.google && window.google.accounts) {
       window.google.accounts.id.initialize({
-        client_id:
-          "731656192661-hgnqdg8eas0je78uqf9qtrmuan7giesl.apps.googleusercontent.com",
+        client_id: process.env.REACT_APP_CLIENT_ID,
         callback: handleCallbackResponse,
       });
 
@@ -36,23 +60,25 @@ function Login() {
   }, []);
 
   let handleLogout = () => {
-    setUser({});
+    // setUser({});
+    authDispatch({ type: "LOGOUT" });
     document.getElementById("signIn").hidden = false;
   };
 
   return (
     <div>
-      <div id="signIn"></div>
-      {Object.keys(user) != 0 && (
-        <Button onClick={handleLogout}>Sign Out</Button>
-      )}
-      {user && (
-        <div>
-          <h1>{user.name}</h1>
-          <img src={user.picture} alt={user.name} />
+      <div className="container">
+        <div className="image-container">
+          <img src="/images/bg.png" alt="Image" />
         </div>
-      )}
-      <div>fix frontent and state management</div>
+        <div className="content-container">
+          <div>
+            <img src="/images/logo.png" alt="Logo" />
+          </div>
+          <div id="signIn"></div>
+          <h1>QuickReadings</h1>
+        </div>
+      </div>
     </div>
   );
 }

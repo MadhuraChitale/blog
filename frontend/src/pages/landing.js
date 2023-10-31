@@ -26,17 +26,19 @@ function Landing() {
         <div
           style={{
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-between",
-            gap: "50px", // Adjust the gap as needed
+            gap: "14px",
           }}
         >
           {cardsData.map((card, index) => (
             <ActionAreaCard
               key={index}
               id={card.id}
-              image={card.image}
+              imageUrl={card.imageUrl}
               title={card.title}
-              description={card.description}
+              keywords={card.keywords}
+              style={{ width: "0 0 calc(33.333% - 8px)", margin: "4px" }} // Adjust the width as needed
             />
           ))}
         </div>

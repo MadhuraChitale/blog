@@ -12,7 +12,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles"; // Import createTheme and ThemeProvider
-
+import { useAuth } from "../context/authprovider";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 const customTheme = createTheme({
   palette: {
     primary: {
@@ -24,12 +26,38 @@ const customTheme = createTheme({
 });
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const { authState, authDispatch } = useAuth();
+
+  let handleLogout = () => {
+    // setUser({});
+    console.log("Logging out");
+    authDispatch({ type: "LOGOUT" });
+
+    axios
+      .get("/logout")
+      .then((response) => {
+        // Handle the response, e.g., navigate to the home page or show a success message
+        navigate("/");
+      })
+      .catch((error) => {
+        // Handle any errors that occur during the request
+      });
+    navigate("/");
+    if (window) {
+      window.history.pushState({}, "", "/");
+    }
+
+    window.location.reload();
+    sessionStorage.clear();
+  };
+
   return (
     <ThemeProvider theme={customTheme}>
       <AppBar position="static" color="primary">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Blog wesite name
+            QuickReadings
           </Typography>
           <Tabs
             value={false} // Set value to false to prevent the tab selection effect
@@ -45,6 +73,11 @@ export default function Navbar() {
               label="Upload"
               component={Link}
               href="/upload"
+              style={{ color: "white" }}
+            />
+            <Tab
+              label="Logout"
+              onClick={handleLogout}
               style={{ color: "white" }}
             />
           </Tabs>

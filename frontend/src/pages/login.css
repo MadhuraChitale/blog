@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide the page into two equal columns */
+    height: 100vh;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    /* padding: 20px; Add padding as needed */
+    /* flex: 1; Takes up 50% of the available width */
+    /* padding: 10px; Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    /* width: 50%; Set the width to 50% to cover the left half */
+    width: 100%; /* Set the width to 100% to occupy the entire div */
+    height: 100%; /* Set the height to 100% to occupy the entire div */
+    overflow: hidden; /* Hide any overflowing parts of the image */
+  }
+  
+  .image-container img {
+    /* max-width: 100%; Make the image responsive */
+    /* max-height: 100%; Make the image responsive */
+    width: 100%; /* Make the image width 100% of the container */
+    height: 100%; /* Make the image height 100% of the container */
+    object-fit: cover; /* Resize the image to cover the entire container while maintaining aspect ratio */
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center items horizontally within the container */
+    justify-content: center; /* Center items vertically within the container */
+    height: 90vh; /* Adjust the height as needed */
+    padding: 20px; /* Add padding as needed */
+  }
+  
+  .content-container img {
+    width: 200px; /* Set the width of the logo */
+    height: 200px; /* Set the height of the logo */
+    border-radius: 50%; /* Apply a circular shape by setting border-radius to 50% */
+    object-fit: cover; /* Ensure the image fits the circular shape */
+    margin-bottom: 50px;
+  }
+  
+  h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif, sans-serif; /* Change 'Your Desired Font' to the font you prefer */
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Apply a bold font weight */
+    color: #333; /* Set the text color to your preferred color */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 60px; /* Add margin at the top for spacing */
+    /* Add any other styles you like */
+  }
